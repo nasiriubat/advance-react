@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react"
 
-export default function Button(props) {
-  return (
-    <button className='btn' onClick={props.onClick}>{props.children}</button>
-  )
+export default function Button({children,size, ...rest}) {
+    
+    return (
+        <button {...rest} className={size == 'lg' ? 'button-large' : 'button-small'}>
+            {children}
+        </button>
+    )
 }

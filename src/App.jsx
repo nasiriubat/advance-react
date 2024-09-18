@@ -8,12 +8,9 @@ function App() {
   }
 
   return (
-    <div className="main">
-      <Button onClick={handleOnClick}>
-        <FaMoneyBill />
-        Buy Now
-      </Button>
-    </div>
+    <main>
+      <Button size="lg">Log in with Google</Button>
+    </main>
   )
 }
 
